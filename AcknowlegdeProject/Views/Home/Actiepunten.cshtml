@@ -1,0 +1,139 @@
+﻿@section Styles {
+    <link href="@Url.Content("~/Styles/ActiepuntenStyle.css")" rel="stylesheet" type="text/css" />
+}
+
+<nav class="navbar" style="background-color: #0082CA">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img class="navbar-brand" src="~/Images/header-logo.png">
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href='@Url.Action("Homepage", "Home")'><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href='@Url.Action("Actiepunten", "Home")'>Actionpoints</a></li>
+            <li><a href='@Url.Action("StarrPage", "Home")'>STARR</a></li>
+            <li><a href='@Url.Action("StarrList", "Home")'><span class="glyphicon glyphicon-th-list"></span></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href='@Url.Action("MyAccount", "Home")'><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+            <li><a href='@Url.Action("Index", "Home")'><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="container-fluid" style="background-color: white; border-radius: 25px;">
+        <div class="row content">
+            <div class=" text-center">
+                <h1 style="color: #0082CA">Actionpoints</h1>
+                <div id="form-div">
+                    <form>
+                        <table id="action-table">
+                            <tr>
+                                <!-- Dropdown input Skills -->
+                                <td>
+                                    <label for="Skill">Select softskill:</label>
+                                </td>
+                                <td>
+                                    <select class="form-control" id="Skill">
+                                        <option>Softskill 1</option>
+                                        <option>Softskill 2</option>
+                                        <option>Softskill 3</option>
+                                        <option>Softskill 4</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- Dropdown input Coach -->
+                                <td>
+                                    <label for="Coach">Select coach:</label>
+                                </td>
+                                <td>
+                                    <select class="form-control" id="Coach">
+                                        <option>Coach 1</option>
+                                        <option>Coach 2</option>
+                                        <option>Coach 3</option>
+                                        <option>Coach 4</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- Text input S -->
+                                <td>
+                                    <label for="Start">Start:</label>
+                                </td>
+                                <td>
+                                    <textarea name="Start"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- Text input S -->
+                                <td>
+                                    <label for="Start">Start:</label>
+                                </td>
+                                <td>
+                                    <textarea name="Start"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- Text input T -->
+                                <td>
+                                    <label for="Taak">Taak:</label>
+                                </td>
+                                <td>
+                                    <textarea name="Taak"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- Text input A -->
+                                <td>
+                                    <label for="Aanpak">Aanpak:</label>
+                                </td>
+                                <td>
+                                    <textarea name="Aanpak"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- Text input R1 -->
+                                <td>
+                                    <label for="Resultaat">Resultaat:</label>
+                                </td>
+                                <td>
+                                    <textarea name="Resultaat"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- Text input R2 -->
+                                <td>
+                                    <label for="Reflectie">Reflectie:</label>
+                                </td>
+                                <td>
+                                    <textarea name="Reflectie"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- Submit button -->
+                                <td colspan="2">
+                                    <div id="cool-button">
+                                        <figure>
+                                            <div>
+                                                <span>Submit</span>
+                                                <span>Submit</span>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height: 30px;"></div>
+
+<footer class="container-fluid text-center navbar-fixed-bottom">
+    <p style="color: white">Footer</p>
+    <p style="color: white">Contact</p>
+    <p style="color: white">Help</p>
+</footer>

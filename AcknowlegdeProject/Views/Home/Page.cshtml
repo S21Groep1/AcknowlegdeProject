@@ -1,0 +1,38 @@
+﻿<!-- Link to the CSS file for this view-->
+@section Styles {
+    <link href="@Url.Content("~/Styles/PageStyle.css")" rel="stylesheet" type="text/css" />
+}
+
+<!-- Link to the javascript file for this view-->
+@Scripts.Render("~/Scripts/MyScripts/PageScript.js")
+
+<!-- All the stuff that belongs in the body-->
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search">
+
+<table id="myTable">
+    <tr class="header">
+        <th style="width:40%;">Title</th>
+        <th style="width:30%;">Country</th>
+        <th style="width:30%;">Coach</th>
+    </tr>
+    <tr>
+        <td>Teamwork</td>
+        <td>03-06-2017</td>
+        <td>Linda</td>
+    </tr>
+    <tr>
+        <td>Class Modeling</td>
+        <td>24-07-2017</td>
+        <td>Henk</td>
+    </tr>
+    <tr>
+        <td>Analysing</td>
+        <td>02-03-2018</td>
+        <td>Peter</td>
+    </tr>
+    <tr>
+        <td>Writing</td>
+        <td>14-12-2017</td>
+        <td>Dave</td>
+    </tr>
+</table>
